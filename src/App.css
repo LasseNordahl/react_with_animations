@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #2e2e2e;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -30,4 +32,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom CSS */
+
+.centerFlex {
+  min-height: 100vh;
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding-top: 30px;
+  color: white
+}
+
+.animationCard {
+  background-color: #fcfcfc;
+  width: 70vh;
+  height: 70vh;
+  border-radius: 20px;
+}
+
+/* .clockDot {
+  width: 12px;
+  height: 12px;
+  background-color: #2e2e2e;
+} */
+
+.clockWrapper {
+  /* background-color: #fcfcfc; */
+  /* border-radius: 20px; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 12px;
+  height: 100vh;
+}
+
+.clockDot {
+    position: absolute;
+    opacity: 0;
+    width: 3px;
+    height: 100px;
+    margin-top: -12vh;
+    transform-origin: 50% 50%;
+    background: white;
+    /* border-radius: 50%; */
+    transform: scaleY(-20)
 }
